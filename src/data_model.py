@@ -1,5 +1,8 @@
 def increment(x: int) -> int:
-    return x + 1
+    if not type(x) is int:
+        raise TypeError("Only integers are allowed")
+    else:
+        return x + 1
 
 
 class Employee:
@@ -12,4 +15,4 @@ class Employee:
         self.age = increment(self.age)
 
     def give_raise(self) -> None:
-        self.salary = increment(self.age)
+        self.salary = self.salary + increment(self.age)  # added salary +
