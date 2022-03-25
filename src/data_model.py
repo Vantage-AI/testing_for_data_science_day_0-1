@@ -12,4 +12,7 @@ class Employee:
         self.age = increment(self.age)
 
     def give_raise(self) -> None:
-        self.salary = increment(self.age)
+        self.salary += increment(self.age)
+
+
+# print(increment([1, 2]))
