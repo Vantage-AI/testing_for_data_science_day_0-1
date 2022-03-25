@@ -8,7 +8,7 @@ from src.data_model import Employee, increment
 def test_increment_example() -> None:
     x = 10
     result = increment(x)
-    expected_result = 5
+    expected_result = 11
     assert result == expected_result
 
 
