@@ -1,4 +1,6 @@
 def increment(x: int) -> int:
+    if (type(x) != int):
+        raise TypeError
     return x + 1
 
 

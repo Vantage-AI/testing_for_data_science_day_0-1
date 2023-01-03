@@ -6,7 +6,7 @@ from src.data_model import Employee, increment
 # -- Exercise 1 --
 # Make this test pass.
 def test_increment_example() -> None:
-    x = 10
+    x = 4
     result = increment(x)
     expected_result = 5
     assert result == expected_result
@@ -26,7 +26,8 @@ def test_type_error_on_boolean() -> None:
 # The problem that arises is that our type checker MyPy, won't accept this code. You can see this when you try to commit
 # the code. Finish by making sure that MyPy ignores this (on purpose) ill typed line of code.
 def test_type_error_on_string() -> None:
-    pass
+    with pytest.raises(expected_exception=TypeError):
+        increment("test")  # type: ignore
 
 
 # -- Exercise 4 --
