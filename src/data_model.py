@@ -1,4 +1,6 @@
 def increment(x: int) -> int:
+    if isinstance(x, int) is False:
+        raise TypeError
     return x + 1
 
 

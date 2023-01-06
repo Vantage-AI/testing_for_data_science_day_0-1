@@ -6,7 +6,7 @@ from src.data_model import Employee, increment
 # -- Exercise 1 --
 # Make this test pass.
 def test_increment_example() -> None:
-    x = 10
+    x = 4
     result = increment(x)
     expected_result = 5
     assert result == expected_result
