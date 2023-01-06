@@ -1,4 +1,7 @@
 def increment(x: int) -> int:
+    if type(x) != int:
+        raise TypeError("Function increment() expects an integer input.")
+
     return x + 1
 
 
@@ -12,4 +15,4 @@ class Employee:
         self.age = increment(self.age)
 
     def give_raise(self) -> None:
-        self.salary = increment(self.age)
+        self.salary = self.salary + 1

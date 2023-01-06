@@ -24,5 +24,5 @@ setuptools.setup(
     install_requires=requirements,
     extras_require={
         "develop": develop_requirements,
-    }
+    },
 )
